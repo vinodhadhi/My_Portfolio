@@ -1,0 +1,12 @@
+.cart {
+  display: grid;
+  place-items: center;
+  min-height: 70vh;
+}
+
+.cart__card {
+  width: min(760px, 100%);
+  padding: clamp(2rem, 4vw, 3rem);
+  display: grid;
+  gap: 1.25rem;
+}

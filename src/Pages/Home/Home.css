@@ -1,0 +1,136 @@
+.home__grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.9fr;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.home__content,
+.home__panel,
+.home__mini-card {
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.home__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.home__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.home__socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.home__socials a {
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: transform 180ms ease, border-color 180ms ease;
+}
+
+.home__socials a:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 179, 107, 0.35);
+}
+
+.home__spotlight {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.home__panel {
+  position: relative;
+  overflow: hidden;
+}
+
+.home__panel::after {
+  content: "";
+  position: absolute;
+  inset: auto -3rem -3rem auto;
+  width: 14rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 122, 89, 0.3), transparent 70%);
+}
+
+.home__panel-label {
+  margin-bottom: 0.8rem;
+  color: var(--accent-strong);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+.home__panel h2,
+.home__mini-card h3 {
+  font-size: clamp(1.5rem, 2.5vw, 2.4rem);
+  line-height: 1.1;
+}
+
+.home__panel p,
+.home__mini-card p {
+  margin-top: 1rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.home__metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.home__metric-card {
+  padding: 1rem;
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.home__metric-card strong {
+  display: block;
+  font-size: 1.6rem;
+  color: var(--text-primary);
+}
+
+.home__metric-card span {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}
+
+.home__mini-card {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+@media (max-width: 900px) {
+  .home__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home__mini-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .home__metrics {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,38 @@
+.photo__layout {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.photo__content {
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  display: grid;
+  gap: 1.25rem;
+}
+
+.photo__cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.photo__card {
+  padding: clamp(1.4rem, 2vw, 2rem);
+  display: grid;
+  gap: 1rem;
+}
+
+.photo__card h2 {
+  font-size: 1.3rem;
+}
+
+.photo__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+@media (max-width: 900px) {
+  .photo__cards {
+    grid-template-columns: 1fr;
+  }
+}
