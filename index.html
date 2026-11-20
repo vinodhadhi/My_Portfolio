@@ -92,7 +92,7 @@
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
-        <!-- Second Image: Perfectly matches the height of the two divs -->
+        <!-- Left: Image stretches to match the height of cards + sentence -->
         <div class="section__pic-container">
           <img
             src="./assets/about-pic.png"
@@ -100,46 +100,48 @@
             class="about-pic"
           />
         </div>
-        <!-- The Two Divs: Experience & Education -->
-        <div class="about-containers">
-          <!-- Experience Card (Div 1) -->
-          <div class="details-container">
-            <img
-              src="./assets/experience.svg"
-              alt="Experience icon"
-              class="icon"
-            />
-            <h3>Experience</h3>
-            <p>
-              <strong>Full Stack Intern</strong><br />
-              Innovitegra Solutions (FinTech)<br /><br />
-              <strong>Python Full Stack Intern</strong><br />
-              Dheecoding Lab (Software Training Institute)
-            </p>
+        <!-- Right: Cards and Sentence matching image height -->
+        <div class="about-details-container">
+          <div class="about-containers">
+            <!-- Experience Card (Div 1) -->
+            <div class="details-container">
+              <img
+                src="./assets/experience.svg"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>
+                <strong>Full Stack Intern</strong><br />
+                Innovitegra Solutions (FinTech)<br /><br />
+                <strong>Python Full Stack Intern</strong><br />
+                Dheecoding Lab (Software Training Institute)
+              </p>
+            </div>
+            <!-- Education Card (Div 2) -->
+            <div class="details-container">
+              <img
+                src="./assets/education.svg"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                <strong>B.Tech in Computer Science</strong><br />
+                Presidency University, Bangalore<br />
+                (2021 – 2025)<br /><br />
+                <strong>Pre-University (PCMB)</strong><br />
+                BEL Composite College
+              </p>
+            </div>
           </div>
-          <!-- Education Card (Div 2) -->
-          <div class="details-container">
-            <img
-              src="./assets/education.svg"
-              alt="Education icon"
-              class="icon"
-            />
-            <h3>Education</h3>
+          <!-- Bio text aligned with the bottom of the image -->
+          <div class="text-container">
             <p>
-              <strong>B.Tech in Computer Science</strong><br />
-              Presidency University, Bangalore<br />
-              (2021 – 2025)<br /><br />
-              <strong>Pre-University (PCMB)</strong><br />
-              BEL Composite College
+              I am an aspiring Software Engineer and Full Stack Developer skilled in <strong>Python, Django, FastAPI, React, SQL</strong>, and <strong>Machine Learning</strong>. I have practical experience developing web applications and customer risk assessment workflows in financial technology systems (evaluating PEP and country risk profiles). Passionate about engineering scalable, secure, and performant software solutions while continuously mastering algorithmic problem solving.
             </p>
           </div>
         </div>
-      </div>
-      <!-- Bio text sits cleanly underneath both image & cards -->
-      <div class="text-container">
-        <p>
-          I am an aspiring Software Engineer and Full Stack Developer skilled in <strong>Python, Django, FastAPI, React, SQL</strong>, and <strong>Machine Learning</strong>. I have practical experience developing web applications and customer risk assessment workflows in financial technology systems (evaluating Politically Exposed Persons and country risk profiles). I am passionate about engineering scalable, secure, and performant digital solutions while continuously mastering algorithmic problem solving.
-        </p>
       </div>
     </section>
 
