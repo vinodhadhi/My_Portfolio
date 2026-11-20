@@ -320,14 +320,14 @@ section {
   display: flex;
   align-items: stretch;
   justify-content: center;
-  gap: 2.5rem;
+  gap: 3rem;
   margin-top: 2rem;
   width: 100%;
 }
 
 #about .section__pic-container {
-  width: 290px;
-  min-width: 290px;
+  width: 330px;
+  min-width: 330px;
   flex-shrink: 0;
   border-radius: 2rem;
   display: flex;
@@ -344,23 +344,31 @@ section {
   -webkit-filter: grayscale(100%);
 }
 
+.about-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  flex: 1;
+}
+
 .about-containers {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
   width: 100%;
-  align-items: stretch;
 }
 
 #about .text-container {
-  margin-top: 2rem;
-  font-size: 1rem;
-  line-height: 1.7;
+  margin-top: 1.25rem;
+  font-size: 0.95rem;
+  line-height: 1.65;
 }
 
 #about .text-container p {
-  text-align: center;
+  text-align: left;
   color: rgb(75, 85, 99);
+  margin: 0;
 }
 
 .details-container {
