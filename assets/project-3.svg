@@ -9,7 +9,7 @@
   <!-- Content -->
   <rect x="70" y="110" width="460" height="70" rx="12" fill="#312e81"/>
   <text x="95" y="145" font-family="'Poppins', sans-serif" font-size="20" font-weight="600" fill="#a5b4fc">Role-Based Access Control</text>
-  <text x="95" y="165" font-family="'Poppins', sans-serif" font-size="13" fill="#c7d2fe">Separate Admin & Staff Portals • Leave Workflows</text>
+  <text x="95" y="165" font-family="'Poppins', sans-serif" font-size="13" fill="#c7d2fe">Separate Admin and Staff Portals | Leave Workflows</text>
   <!-- Chips -->
   <rect x="70" y="210" width="90" height="35" rx="8" fill="#6366f1" opacity="0.3"/>
   <text x="115" y="233" font-family="'Poppins', sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">Django</text>

@@ -12,8 +12,8 @@
   <body>
     <!-- DESKTOP NAV -->
     <nav id="desktop-nav">
-      <div class="logo">Vinodh <span>S</span></div>
-      <div>
+      <div class="nav-container">
+        <div class="logo">Vinodh <span>S</span></div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#leetcode">LeetCode</a></li>
@@ -26,19 +26,21 @@
 
     <!-- MOBILE HAMBURGER NAV -->
     <nav id="hamburger-nav">
-      <div class="logo">Vinodh <span>S</span></div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#leetcode" onclick="toggleMenu()">LeetCode</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      <div class="nav-container">
+        <div class="logo">Vinodh <span>S</span></div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#leetcode" onclick="toggleMenu()">LeetCode</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
         </div>
       </div>
     </nav>
@@ -144,10 +146,10 @@
     <section id="leetcode">
       <p class="section__text__p1">Algorithmic Problem Solving</p>
       <h1 class="title">LeetCode Highlights</h1>
-      <div class="about-containers" style="margin-top: 2rem;">
+      <div class="leetcode-containers">
         <div class="details-container">
           <img src="./assets/leetcode.svg" alt="LeetCode" class="icon" style="color: #f59e0b;" />
-          <h3>130+ Problems Solved</h3>
+          <h3>130+ Solved</h3>
           <p>Consistent daily practice across Arrays, Trees, Dynamic Programming, and SQL queries.</p>
           <span class="badge-pill">Top Problem Solver</span>
         </div>
@@ -164,7 +166,7 @@
           <span class="badge-pill">Century Milestone</span>
         </div>
       </div>
-      <div class="btn-container" style="margin-top: 1.5rem;">
+      <div class="btn-container" style="margin-top: 2rem;">
         <button
           class="btn btn-color-2"
           onclick="window.open('https://leetcode.com/u/vinodhadhi/', '_blank')"
@@ -178,104 +180,102 @@
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Technical Skills</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <!-- Full Stack Skills -->
-          <div class="details-container">
-            <h2 class="experience-sub-title">Full Stack Development</h2>
-            <div class="article-container">
-              <article>
-                <img src="./assets/checkmark.svg" alt="Skill icon" class="icon" />
-                <div>
-                  <h3>Python</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.svg" alt="Skill icon" class="icon" />
-                <div>
-                  <h3>Django / DRF</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.svg" alt="Skill icon" class="icon" />
-                <div>
-                  <h3>FastAPI</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.svg" alt="Skill icon" class="icon" />
-                <div>
-                  <h3>React.js</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.svg" alt="Skill icon" class="icon" />
-                <div>
-                  <h3>SQL / PostgreSQL</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.svg" alt="Skill icon" class="icon" />
-                <div>
-                  <h3>HTML & CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-            </div>
+      <div class="skills-grid-wrapper">
+        <!-- Full Stack Skills -->
+        <div class="details-container">
+          <h2 class="experience-sub-title">Full Stack Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.svg" alt="Skill icon" class="icon" />
+              <div>
+                <h3>Python</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.svg" alt="Skill icon" class="icon" />
+              <div>
+                <h3>Django / DRF</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.svg" alt="Skill icon" class="icon" />
+              <div>
+                <h3>FastAPI</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.svg" alt="Skill icon" class="icon" />
+              <div>
+                <h3>React.js</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.svg" alt="Skill icon" class="icon" />
+              <div>
+                <h3>SQL / Postgres</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.svg" alt="Skill icon" class="icon" />
+              <div>
+                <h3>HTML & CSS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
           </div>
+        </div>
 
-          <!-- AI / ML & Tools -->
-          <div class="details-container">
-            <h2 class="experience-sub-title">AI / ML & Developer Tools</h2>
-            <div class="article-container">
-              <article>
-                <img src="./assets/checkmark.svg" alt="Skill icon" class="icon" />
-                <div>
-                  <h3>TensorFlow / Keras</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.svg" alt="Skill icon" class="icon" />
-                <div>
-                  <h3>Scikit-learn</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.svg" alt="Skill icon" class="icon" />
-                <div>
-                  <h3>EfficientNetB0</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.svg" alt="Skill icon" class="icon" />
-                <div>
-                  <h3>Streamlit</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.svg" alt="Skill icon" class="icon" />
-                <div>
-                  <h3>Git & GitHub</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.svg" alt="Skill icon" class="icon" />
-                <div>
-                  <h3>REST APIs</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-            </div>
+        <!-- AI / ML & Tools -->
+        <div class="details-container">
+          <h2 class="experience-sub-title">AI / ML & Developer Tools</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.svg" alt="Skill icon" class="icon" />
+              <div>
+                <h3>TensorFlow</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.svg" alt="Skill icon" class="icon" />
+              <div>
+                <h3>Scikit-learn</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.svg" alt="Skill icon" class="icon" />
+              <div>
+                <h3>EfficientNetB0</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.svg" alt="Skill icon" class="icon" />
+              <div>
+                <h3>Streamlit</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.svg" alt="Skill icon" class="icon" />
+              <div>
+                <h3>Git & GitHub</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.svg" alt="Skill icon" class="icon" />
+              <div>
+                <h3>REST APIs</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
           </div>
         </div>
       </div>
@@ -285,97 +285,95 @@
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          
-          <!-- Project 1 -->
-          <div class="details-container color-container">
-            <div class="project-img-container">
-              <img
-                src="./assets/project-1.svg"
-                alt="DiagnosAI Project"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">DiagnosAI: Disease Support</h2>
-            <p class="project-desc">
-              ML clinical system predicting 41 diseases from 132 symptoms with 92% accuracy via FastAPI.
-            </p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/vinodhadhi/CLINICAL-DISEASE-SUPPORT-SYSTEM', '_blank')"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/vinodhadhi/CLINICAL-DISEASE-SUPPORT-SYSTEM', '_blank')"
-              >
-                Details
-              </button>
-            </div>
+      <div class="projects-grid">
+        
+        <!-- Project 1 -->
+        <div class="details-container color-container">
+          <div class="project-img-container">
+            <img
+              src="./assets/project-1.svg"
+              alt="DiagnosAI Project"
+              class="project-img"
+            />
           </div>
-
-          <!-- Project 2 -->
-          <div class="details-container color-container">
-            <div class="project-img-container">
-              <img
-                src="./assets/project-2.svg"
-                alt="Tomato Disease Detection"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Crop Disease Predictor</h2>
-            <p class="project-desc">
-              Computer vision classifier with EfficientNetB0 achieving 98% accuracy on tomato leaves.
-            </p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/vinodhadhi/AI-Driven-Tomato-Disease-Prediction-and-Management-System', '_blank')"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/vinodhadhi/AI-Driven-Tomato-Disease-Prediction-and-Management-System', '_blank')"
-              >
-                Details
-              </button>
-            </div>
+          <h2 class="project-title">DiagnosAI: Disease Support</h2>
+          <p class="project-desc">
+            ML clinical system predicting 41 diseases from 132 symptoms with 92% accuracy via FastAPI.
+          </p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/vinodhadhi/CLINICAL-DISEASE-SUPPORT-SYSTEM', '_blank')"
+            >
+              Github
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/vinodhadhi/CLINICAL-DISEASE-SUPPORT-SYSTEM', '_blank')"
+            >
+              Details
+            </button>
           </div>
-
-          <!-- Project 3 -->
-          <div class="details-container color-container">
-            <div class="project-img-container">
-              <img
-                src="./assets/project-3.svg"
-                alt="Leave Management System"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Staff Leave Management</h2>
-            <p class="project-desc">
-              Full-stack Django & DRF web app with role-based auth, admin approval workflows, and SQLite.
-            </p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/vinodhadhi', '_blank')"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/vinodhadhi', '_blank')"
-              >
-                Details
-              </button>
-            </div>
-          </div>
-
         </div>
+
+        <!-- Project 2 -->
+        <div class="details-container color-container">
+          <div class="project-img-container">
+            <img
+              src="./assets/project-2.svg"
+              alt="Tomato Disease Detection"
+              class="project-img"
+            />
+          </div>
+          <h2 class="project-title">Crop Disease Predictor</h2>
+          <p class="project-desc">
+            Computer vision classifier with EfficientNetB0 achieving 98% accuracy on tomato leaves.
+          </p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/vinodhadhi/AI-Driven-Tomato-Disease-Prediction-and-Management-System', '_blank')"
+            >
+              Github
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/vinodhadhi/AI-Driven-Tomato-Disease-Prediction-and-Management-System', '_blank')"
+            >
+              Details
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="details-container color-container">
+          <div class="project-img-container">
+            <img
+              src="./assets/project-3.svg"
+              alt="Leave Management System"
+              class="project-img"
+            />
+          </div>
+          <h2 class="project-title">Staff Leave Management</h2>
+          <p class="project-desc">
+            Full-stack Django & DRF web app with role-based auth, admin approval workflows, and SQLite.
+          </p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/vinodhadhi', '_blank')"
+            >
+              Github
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/vinodhadhi', '_blank')"
+            >
+              Details
+            </button>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -425,15 +423,13 @@
     <!-- FOOTER SECTION -->
     <footer>
       <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#leetcode">LeetCode</a></li>
-            <li><a href="#experience">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#leetcode">LeetCode</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
       <p>Copyright &#169; 2026 Vinodh S. All Rights Reserved.</p>
     </footer>
